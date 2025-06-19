@@ -1,0 +1,154 @@
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.footerTop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.newsletter,
+.contact,
+.links {
+  flex: 1;
+  min-width: 220px;
+}
+
+.newsletter h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  margin-bottom: 10px;
+}
+
+.newsletterForm {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletterForm input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+}
+
+.newsletterForm button {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
+  font-weight: 500;
+}
+
+.contact h4,
+.links h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.contact p,
+.contact small,
+.links ul li {
+  margin-bottom: 8px;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerBottom {
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.socialPay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.payment {
+  text-align: right;
+}
+
+.payment .icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .footerTop {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .newsletterForm {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletterForm input,
+  .newsletterForm button {
+    border-radius: 2px;
+    width: 100%;
+  }
+
+  .socialPay {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .social {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .payment {
+    text-align: center;
+    width: 100%;
+  }
+
+  .payment .icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
